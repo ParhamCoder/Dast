@@ -17,9 +17,4 @@ b.sort(reverse=True)
 
 for j in range(1, (k+1)) :
     v = a - b
-    
 
-
-
-x = b-a
-print(x)
