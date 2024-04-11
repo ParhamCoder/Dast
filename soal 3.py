@@ -10,7 +10,11 @@ def number_no (k) :
 
 def count_num (a) :
     count = 0
-    for k in a:
+    for k in range(1, (a+1)):
         if number_no (k) :
             count += 1
         return count
+
+x = int(input())
+y = count_num(x)
+print(y)
