@@ -5,7 +5,6 @@ def is_sacred(num):
             if digit not in ['3', '5', '7']:
                 return False
         return True
-    return False
 
 def count_sacred_numbers(n):
     count = 0
