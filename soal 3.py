@@ -1,3 +1,5 @@
+a = int(input())
+a = sorted(a)
 b = sorted(a)
 b.sort(reverse=True)
 def stringa(a):
