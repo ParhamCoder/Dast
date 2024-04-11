@@ -1,20 +1,18 @@
-def number_no (k) :
-    n = str(k)
-    if '3' in n and '5' in n and '7' in n :
-        a = True
-        for i in n:
+def moghadas(num):
+    num1 = str(num)
+    if '3' in num1 and '5' in num1 and '7' in num1:
+        for i in num1:
             if i not in ['3', '5', '7']:
-                a = False
-    else :
-        a = False
+                return False
+        return True
 
-def count_num (a) :
-    count = 0
-    for k in range(1, (a+1)):
-        if number_no (k) :
-            count += 1
-        return count
+def shomaresh(n):
+    x = 0
+    for i in range(1, n+1):
+        if moghadas(i):
+            x += 1
+    return x
 
-x = int(input())
-y = count_num(x)
-print(y)
+n = int(input())
+result = shomaresh(n)
+print(result)
