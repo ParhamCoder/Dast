@@ -1,4 +1,4 @@
-a = int(input())
+a = str(input())
 a = sorted(a)
 b = sorted(a)
 b.sort(reverse=True)
@@ -12,4 +12,9 @@ def stringb(b):
     for i in a:
         text = text + str(i)
     return text
-    
+
+a = stringa(a)
+b = stringb(b)
+
+x = b-a
+print(x)
