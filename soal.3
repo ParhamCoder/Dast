@@ -1,0 +1,10 @@
+n = int(input())
+x = list(map(int, input().split()))
+a = ''
+lst = [1, 4, 6, 9, 0]
+for i in x:
+    if i in lst:
+        i = str(i)
+        a += i
+        a += ' '
+print(a)
