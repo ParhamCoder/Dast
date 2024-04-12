@@ -1,17 +1,5 @@
 n = int(input())
-x = []
-for i in range(n):
-    a = int(input())
-    x.append(a)
-f = x[0]
-y = x.pop(x[0])
-for j in (x):
-    if j < f:
-        x.pop(j)
-    else:
-        f = j
-
-text = ''
-for l in x:
-    text = text + str(l) + " "
-print(text)
+for i in range(1, (n+1)):
+  i = int(input())
+  if i in [1, 4, 6, 9]
+    print(i)
