@@ -1,0 +1,15 @@
+n = int(input())
+x = []
+for i in range(n):
+    a = int(input())
+    x.append(a)
+f = x[0]
+for j in x :
+    if j < f:
+        x.pop(j)
+    else:
+        f = j
+text = ''
+for l in x:
+    text = text + str(l) + " "
+print(text)
