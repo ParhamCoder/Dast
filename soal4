@@ -1,5 +1,32 @@
-n = int(input())
-for i in range(1, (n+1)):
-  i = int(input())
-  if i in [1, 4, 6, 9]
-    print(i)
+def get_numbers_and_print_special():
+  while True:
+    try:
+      number_of_inputs = int(input("تعداد اعداد را وارد کنید: "))
+      if number_of_inputs > 0:
+        break
+      else:
+        print("خطا: تعداد اعداد باید بیشتر از صفر باشد.")
+    except ValueError:
+      print("خطا: ورودی باید عدد صحیح باشد.")
+
+  # دریافت اعداد از کاربر
+  print(f"تا {number_of_inputs} عدد را با فاصله وارد کنید:")
+  numbers_str = input()
+  numbers_str = numbers_str.strip()  # حذف فاصله های اضافی
+
+  # تبدیل رشته به لیست اعداد
+  numbers = numbers_str.split(" ")
+
+  # بررسی و چاپ اعداد خاص
+  for number_str in numbers:
+    try:
+      number = int(number_str)
+    except ValueError:
+      print(f"خطا: '{number_str}' عدد صحیح نیست.")
+      continue
+
+    if number in [1, 4, 6, 9]:
+      print(f"عدد خاص: {number}")
+
+# اجرای تابع
+get_numbers_and_print_special()
